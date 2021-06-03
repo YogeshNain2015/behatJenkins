@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="default" tests="0"/>
+  <testsuite name="Test blog is up" tests="3" failures="3" skipped="0" errors="0" time="0.011">
+    <testcase name="Test site root is found" time="0.007" status="failed">
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[Given I am on "/":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[Then I should see "shanethehat":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[And I should see "Where I write stuff about programming":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+    </testcase>
+    <testcase name="Test about page exists" time="0" status="failed">
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[Given I am on "/":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[And I follow "About Me":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[Then I should be on "/about-me/":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[And I should see "About Me":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+    </testcase>
+    <testcase name="Deliberate failue" time="0" status="failed">
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[Given i am on "/":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+      <failure type="Behat\Behat\Definition\Exception\RedundantStepException"><![CDATA[Then I should see "Where I air my dirty laundry":
+
+Step "/^(?:|I )am on (?:|the )homepage$/" is already defined in FeatureContext::iAmOnHomepage()
+
+FeatureContext::iAmOnHomepage()
+Behat\MinkExtension\Context\MinkContext::iAmOnHomepage()]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
